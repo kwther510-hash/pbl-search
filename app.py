@@ -8,7 +8,7 @@ import requests
 import streamlit as st
 from pypdf import PdfReader
 
-st.set_page_config(page_title="باحث PBL", page_icon="🔎", layout="wide")
+st.set_page_config(page_title=" PBL searcher", page_icon="🔎", layout="wide")
 
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 
@@ -171,7 +171,7 @@ def search_pmc(query, section_keywords, limit=3):
 # ---------- interface ----------
 
 st.title("🔎 باحث PBL")
-st.write("ابحث مرة وحدة بكل مصادرك وبالأبحاث المفتوحة")
+st.write("ابحث مرة واحدة بكل مصادرك وبالأبحاث المفتوحة")
 
 docs = dict(load_sample_docs())
 
